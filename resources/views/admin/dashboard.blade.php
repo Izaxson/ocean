@@ -88,7 +88,7 @@
                         <div class="card-content">
                           <h5 class="font-15">ETHNICITY</h5>
                           <h1 class="mb-3 font-18 align="center" ><b> LOCALS -{{$count = DB::table('audits')->where('home_county','Mandera')->count()}}
-                          <BR>NON-LOCALS -{{$count = DB::table('audits')->where('home_county','Mandera')->count()}}</b></h1>
+                          <BR></b></h1>
                           
                          
                         </div>
@@ -166,7 +166,44 @@
           
             
           </div>
-         
+          <div class="row">
+            <div class="col-12 ">
+              <div class="card">
+                <div class="card-header">
+                  <h4></h4>
+                </div>
+                <div class="card-body">
+                  <div id="chart4" class="chartsh"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 ">
+              <div class="card">
+                <div class="card-header">
+                  <h4></h4>
+                </div>
+                <div class="card-body">
+                  <div class="summary">
+                    <div class="summary-chart active" data-tab-group="summary-tab" id="summary-chart">
+                      <div id="chart3" class="chartsh"></div>
+                    </div>
+                    <div data-tab-group="summary-tab" id="summary-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12  ">
+              <div class="card">
+                <div class="card-header">
+                  <h4></h4>
+                </div>
+                <div class="card-body">
+                  <div id="chart2" class="chartsh"></div>
+                </div>
+              </div>
+            </div>
+          </div>
               
         
       
@@ -177,7 +214,7 @@
 
               
         </div>
-        <script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 <script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 
 <script src="assets/bundles/morrisscripts.bundle.js"></script> <!-- Morris Plugin Js --> 

@@ -66,6 +66,7 @@ class AuditController extends Controller
             return view('admin.auditrecords')->with('audit',$audit);
       
     }
+  
 
 
     public function ethnicity()
@@ -253,7 +254,7 @@ class AuditController extends Controller
             'employee_name'=> 'required',
             'gender'=> 'required',
             'date_of_birth'=> 'required',
-            'employee_personal_no'=> 'nullable',
+            'employee_personal_no'=> 'required|unique:audits',
             'id_no'=> 'required|unique:audits',
             'disability'=> 'required',
             'nature_of_disability'=> 'nullable',

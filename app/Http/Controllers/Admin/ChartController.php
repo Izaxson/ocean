@@ -196,7 +196,7 @@ class ChartController extends Controller
     	return view('admin.dashboard',compact('nonlocal_count'));
     }
 
-    public function localethnicity()
+    public function graphs()
     {
  
          $result =   DB::select(DB::raw("select COUNT(*) as allclans,
@@ -207,27 +207,17 @@ class ChartController extends Controller
                           
           }                                 
           $arr['chartData']=rtrim($chartData,",");
-          return view('admin/localethnicity', $arr); 
+          return view('admin/dashboard', $arr); 
           
         
     }
 
-    // public function garre()
-    // {
-    // 	$garre = Audit::where('sub_clan','GARRE')->get();
-    	
-    	
-    // 	$garre_count = count($garre);    	
-    // 	// $veg_count = count($veg);
-    // 	// $grains_count = count($grains);
-    	
-    // 	return view('admin.garre',compact('garre_count'));
-    // }
+    
   
     public function garre()
     {
  
-         $result = DB::select(DB::raw("SELECT COUNT(*) AS garresubclans,
+         $result = DB::select(DB::raw("SELECT COUNT(*) AS subclans,
          sub_clan FROM audits
          WHERE clan='GARRE'
          group by sub_clan"));  
@@ -235,7 +225,7 @@ class ChartController extends Controller
           $chartData="";
           
           foreach($result as $list){
-              $chartData.="['".$list->sub_clan."',   ".$list-> garresubclans." ],"; 
+              $chartData.="['".$list->sub_clan."',   ".$list-> subclans." ],"; 
                           
           }  
                                          
@@ -244,6 +234,69 @@ class ChartController extends Controller
           
         
     }
+    public function degodia()
+    {
+ 
+         $result = DB::select(DB::raw("SELECT COUNT(*) AS subclans,
+         sub_clan FROM audits
+         WHERE clan='DEGODIA'
+         group by sub_clan"));  
+         
+          $chartData="";
+          
+          foreach($result as $list){
+              $chartData.="['".$list->sub_clan."',   ".$list-> subclans." ],"; 
+                          
+          }  
+                                         
+          $arr['chartData']=rtrim($chartData,",");
+          return view('admin/degodia', $arr); 
+          
+        
+    }
+
+    public function murulle()
+    {
+ 
+         $result = DB::select(DB::raw("SELECT COUNT(*) AS subclans,
+         sub_clan FROM audits
+         WHERE clan='MURULLE'
+         group by sub_clan"));  
+         
+          $chartData="";
+          
+          foreach($result as $list){
+              $chartData.="['".$list->sub_clan."',   ".$list-> subclans." ],"; 
+                          
+          }  
+                                         
+          $arr['chartData']=rtrim($chartData,",");
+          return view('admin/murulle', $arr); 
+          
+        
+    }
+
+    public function cornertribe()
+    {
+ 
+         $result = DB::select(DB::raw("SELECT COUNT(*) AS subclans,
+         sub_clan FROM audits
+         WHERE clan='CORNER TRIBE'
+         group by sub_clan"));  
+         
+          $chartData="";
+          
+          foreach($result as $list){
+              $chartData.="['".$list->sub_clan."',   ".$list-> subclans." ],"; 
+                          
+          }  
+                                         
+          $arr['chartData']=rtrim($chartData,",");
+          return view('admin/cornertribe', $arr); 
+          
+        
+    }
+
 
     
 

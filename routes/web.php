@@ -59,7 +59,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
                 Route::get('jobgroup',[App\Http\Controllers\Admin\ChartController::class, 'jobgroup'])->name('jobgroup');
                 Route::get('localethnicity',[App\Http\Controllers\Admin\ChartController::class, 'localethnicity'])->name('localethnicity');
                 Route::get('garre',[App\Http\Controllers\Admin\ChartController::class, 'garre'])->name('garre');
-               
+                Route::get('degodia',[App\Http\Controllers\Admin\ChartController::class, 'degodia'])->name('degodia');
+                Route::get('murulle',[App\Http\Controllers\Admin\ChartController::class, 'murulle'])->name('murulle');
+                Route::get('cornertribe',[App\Http\Controllers\Admin\ChartController::class, 'cornertribe'])->name('cornertribe');
+                Route::get('health',[App\Http\Controllers\DepartmentController::class, 'health'])->name('health');
+                Route::get('water',[App\Http\Controllers\DepartmentController::class, 'water'])->name('water');
             });
             //staff routes
             Route::group(['as'=>'staff.','prefix'=>'staff','namespsace'=>'Staff','middleware'=>['auth','staff']],function(){

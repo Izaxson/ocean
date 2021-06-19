@@ -49,17 +49,16 @@
               </ul>
 
               <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="trending-up"></i><span>Somali Sub Clans Reports</span></a>
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="trending-up"></i><span>Somali Sub Clans</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="{{route('admin.garre')}}">Garre</a></li>
+                <li><a class="nav-link" href="{{route('admin.degodia')}}">Degodia</a></li>
+                <li><a class="nav-link" href="{{route('admin.murulle')}}">Murulle</a></li>
+                <li><a class="nav-link" href="{{route('admin.cornertribe')}}">Corner Tribe</a></li>
+              
                 
                 
-                <!-- <li><a class="nav-link" href="{{route('admin.placement')}}">Placement</a></li>
-                <li><a class="nav-link" href="{{route('admin.code')}}">Conduct & work Ethics</a></li>
-                <li><a class="nav-link" href="{{route('admin.governance')}}">Principles of governnance</a></li>
-                <li><a class="nav-link" href="{{route('admin.study')}}">Study Leave</a></li>
-                <li><a class="nav-link" href="{{route('admin.terms')}}">Terms of Service </a></li>
-                <li><a class="nav-link" href="{{route('admin.jobgroup')}}">Job groups </a></li> -->
+               
                 
               
                 
@@ -68,22 +67,12 @@
               <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="trending-up"></i><span>Employees Per Department</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Health</a></li>
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Health</a></li>
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Health </a></li>
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Health </a></li>
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Health </a></li>
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Health</a></li>
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Health</a></li>
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Health</a></li>
+                <li><a class="nav-link" href="{{route('admin.health')}}">Health</a></li>
+                <li><a class="nav-link" href="{{route('admin.water')}}">Water</a></li>
+                <!--  -->
                 
                 
-                <!-- <li><a class="nav-link" href="{{route('admin.placement')}}">Placement</a></li>
-                <li><a class="nav-link" href="{{route('admin.code')}}">Conduct & work Ethics</a></li>
-                <li><a class="nav-link" href="{{route('admin.governance')}}">Principles of governnance</a></li>
-                <li><a class="nav-link" href="{{route('admin.study')}}">Study Leave</a></li>
-                <li><a class="nav-link" href="{{route('admin.terms')}}">Terms of Service </a></li>
-                <li><a class="nav-link" href="{{route('admin.jobgroup')}}">Job groups </a></li> -->
+                
                 
               
                 
