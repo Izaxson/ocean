@@ -227,10 +227,10 @@ class ChartController extends Controller
     public function garre()
     {
  
-         $result = DB::select(DB::raw("SELECT COUNT(sub_clan) AS garresubclans,
-         FROM audits
+         $result = DB::select(DB::raw("SELECT COUNT(*) AS garresubclans,
+         sub_clan FROM audits
          WHERE clan='GARRE'
-         group by sub_clan"))->get();  
+         group by sub_clan"));  
          
           $chartData="";
           
