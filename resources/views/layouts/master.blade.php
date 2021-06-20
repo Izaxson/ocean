@@ -4,7 +4,7 @@
 
 <!-- blank.html  21 Nov 2019 03:54:41 GMT -->
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
@@ -22,8 +22,8 @@
 
   <link rel="stylesheet” href=” https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
-<script src= "{{secure_asset('assets/lib/js/jquery.min.js')}}"></script>
-<script src="{{secure_asset('assets/lib/js/bootstrap.min.js')}}"></script>
+<!-- <script src= "{{secure_asset('assets/lib/js/jquery.min.js')}}"></script> -->
+<!-- <script src="{{secure_asset('assets/lib/js/bootstrap.min.js')}}"></script> -->
 </head>
 
 
