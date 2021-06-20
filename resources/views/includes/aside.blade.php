@@ -78,7 +78,7 @@
                 
               </ul>
 
-              <li class="dropdown">
+              <!-- <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="trending-up"></i><span> Sub county</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="{{route('admin.garre')}}">Mandera East</a></li>
@@ -96,13 +96,13 @@
                 <li><a class="nav-link" href="{{route('admin.governance')}}">Principles of governnance</a></li>
                 <li><a class="nav-link" href="{{route('admin.study')}}">Study Leave</a></li>
                 <li><a class="nav-link" href="{{route('admin.terms')}}">Terms of Service </a></li>
-                <li><a class="nav-link" href="{{route('admin.jobgroup')}}">Job groups </a></li> -->
+                <li><a class="nav-link" href="{{route('admin.jobgroup')}}">Job groups </a></li> --
                 
               
                 
               </ul>
             </li>
-            </li>
+            </li> -->
             
            
          
