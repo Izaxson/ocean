@@ -13,10 +13,11 @@ use Database\Seeders\subClanSeeder;
 use Database\Seeders\DatabaseSeeder;
 use Database\Seeders\JobGroupSeeder;
 use Database\Seeders\EthnicitySeeder;
+AcademicsSeeder
 use Database\Seeders\AcademicsSeeder;
 use Database\Seeders\DepartmentSeeder;
 // use Database\Seeders\MdrSubCountySeeder;
-// use Database\Seeders\QualificationSeeder;
+use Database\Seeders\QualificationSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -41,7 +42,7 @@ class DatabaseSeeder extends Seeder
         $this->call(DepartmentSeeder::class);
         $this->call(EthnicitySeeder::class);
         $this->call(SectionSeeder::class);
-        $this->call(AcademicsSeeder::class);
+        $this->call(SubCountyAcademicsSeederSeeder::class);
         // $this->call(MdrSubCountySeeder::class);
         // $this->call(QualificationSeeder::class);
         

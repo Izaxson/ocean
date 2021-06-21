@@ -29,8 +29,8 @@ class UserSeeder extends Seeder
 
         DB::table('users')->insert([
             'role_id'=> 1,
-            'name'=>'CHAIRPERSON-ETHILLAH MOHAMUD',
-            'email'=>'chairperson@mcpsb.go.ke',
+            'name'=>'ETHILLAH MOHAMUD',
+            'email'=>'chaireson@mcpsb.go.ke',
             'password'=>bcrypt('0722931515'),
             'role'=> 'Staff'
             
@@ -38,7 +38,7 @@ class UserSeeder extends Seeder
             ]);
         DB::table('users')->insert([
                 'role_id'=> 1,
-                'name'=>'CE0-MOHAMMED ABDOW',
+                'name'=>'MOHAMMED ABDOW',
                 'email'=>'ceo@mcpsb.go.ke',
                 'password'=>bcrypt('0722327191'),
                 'role'=> 'Staff'
@@ -47,7 +47,7 @@ class UserSeeder extends Seeder
                 ]);
          DB::table('users')->insert([
                     'role_id'=> 1,
-                    'name'=>'DIRECTOR-Hassan Fillow',
+                    'name'=>'Hassan Fillow',
                     'email'=>'director@mcpsb.go.ke',
                     'password'=>bcrypt('0721734567'),
                     'role'=> 'Staff'
