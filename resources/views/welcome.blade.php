@@ -81,7 +81,7 @@
                             <div class="input-group-append">
                                 <span class="input-group-text"  input id="email" type="email" class="form-control" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
-                                <i class="zmdi zmdi-account-circle"></i>
+                                
                                     </span>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                                     </span>
                                 @enderror     
                             <div class="input-group-append">                                
-                                <span class="input-group-text"input id="password" type="password" class="form-control" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password"><a href="forgot-password.html" class="forgot" title="Forgot Password"><i class="zmdi zmdi-lock"></i></a></span>
+                                <span class="input-group-text"input id="password" type="password" class="form-control" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password"><a href="forgot-password.html" class="forgot" title="Forgot Password"></a></span>
                             </div>   
                                                
                         </div>
@@ -103,7 +103,7 @@
                                     {{ __('Login') }}
                                 </button>
 
-                                @if (Route::has('register'))
+                                <!-- @if (Route::has('register'))
                                         <a href="{{ route('register') }}" class="ml-4 text-sm text-green underline">Register</a>
                                     @endif
                                 @if (Route::has('password.request'))
@@ -111,7 +111,7 @@
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                    
-                                @endif
+                                @endif -->
 </a>                 
                       
                     </div>
@@ -125,10 +125,10 @@
             </div>
             <div class="col-lg-8 col-sm-12" float="right">
                 <div class="card">
-                <!-- <img src="{{asset('assets/images/images.png')}}" width="600" height="80" alt="cpsb"> -->
+                <img src="{{asset('assets/front/images/images.png')}}" width="600" height="80" alt="cpsb">
                  
                 
-                <img src="{{asset('assets/front//images/mdrlogo2.jpg')}}" width="600"  alt="cpsb"></p>
+                <img src="{{asset('assets/front//images/mdrlogo2.jpg')}}" width="400"  alt="cpsb"></p>
                 </div>
             </div>
         </div>
