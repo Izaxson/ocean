@@ -49,7 +49,7 @@
               </ul>
 
               <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="trending-up"></i><span>Somali Sub Clans</span></a>
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="trending-up"></i><span>Somali</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="{{route('admin.garre')}}">Garre</a></li>
                 <li><a class="nav-link" href="{{route('admin.degodia')}}">Degodia</a></li>
@@ -65,10 +65,29 @@
               </ul>
 
               <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="trending-up"></i><span>Employees Per Department</span></a>
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="trending-up"></i><span>Departments</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="{{route('admin.health')}}">Health</a></li>
                 <li><a class="nav-link" href="{{route('admin.water')}}">Water</a></li>
+                <li><a class="nav-link" href="{{route('admin.roads')}}">Roads & Public Works</a></li>
+                <li><a class="nav-link" href="{{route('admin.psm')}}">Public Service Management</a></li>
+                <!--  -->
+                <li><a class="nav-link" href="{{route('admin.lands')}}">Lands & Housing</a></li>
+                <li><a class="nav-link" href="{{route('admin.education')}}">Education ,Culture Sports</a></li>
+                <!--  -->
+                <li><a class="nav-link" href="{{route('admin.agriculture')}}">Agriculture$ Livestock</a></li>
+                <li><a class="nav-link" href="{{route('admin.finance')}}">Finance,Economic Planning</a></li>
+                <!--  -->
+                <li><a class="nav-link" href="{{route('admin.trade')}}">Trade&Industralisation</a></li>
+                <li><a class="nav-link" href="{{route('admin.oog')}}">Office of The Governor</a></li>
+                <!--  -->
+                <li><a class="nav-link" href="{{route('admin.mdrmunicipal')}}">Mandera Municipality</a></li>
+                <li><a class="nav-link" href="{{route('admin.elwakmunicipal')}}">Elwak Municipality</a></li>
+                <!--  -->
+                <li><a class="nav-link" href="{{route('admin.elwasco')}}">ELWASCO</a></li>
+                <li><a class="nav-link" href="{{route('admin.mandwasco')}}">MANDWASCO</a></li>
+                <li><a class="nav-link" href="{{route('admin.psb')}}">Public Service Board</a></li>
+                <!--  -->
                 <!--  -->
                 
                 
@@ -78,31 +97,7 @@
                 
               </ul>
 
-              <!-- <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="trending-up"></i><span> Sub county</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Mandera East</a></li>
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Mandera West</a></li>
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Mandera North</a></li>
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Mandera South</a></li>
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Lafey</a></li>
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Kotulo</a></li>
-                <li><a class="nav-link" href="{{route('admin.garre')}}">Banissa</a></li>
-               
-                
-                
-                <!-- <li><a class="nav-link" href="{{route('admin.placement')}}">Placement</a></li>
-                <li><a class="nav-link" href="{{route('admin.code')}}">Conduct & work Ethics</a></li>
-                <li><a class="nav-link" href="{{route('admin.governance')}}">Principles of governnance</a></li>
-                <li><a class="nav-link" href="{{route('admin.study')}}">Study Leave</a></li>
-                <li><a class="nav-link" href="{{route('admin.terms')}}">Terms of Service </a></li>
-                <li><a class="nav-link" href="{{route('admin.jobgroup')}}">Job groups </a></li> --
-                
-              
-                
-              </ul>
-            </li>
-            </li> -->
+           
             
            
          

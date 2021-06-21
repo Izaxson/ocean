@@ -9,6 +9,7 @@ use App\Models\Audit;
 use App\Models\Terms;
 use App\Models\County;
 use App\Models\Section;
+use App\Models\Academic;
 use App\Models\JobGroup;
 use App\Models\Sub_clan;
 use App\Models\Ethnicity;
@@ -41,28 +42,30 @@ class AuditController extends Controller
             $ethnicities =Ethnicity::all();
             $county =County::all();
             $section =Section::all();
-            $education =Qualification::all();
+            // $education =Qualification::all();
             $subcounties =SubCounty::all();
-            $subdutystation =SubCounty::join('counties','counties.id','=','sub_counties.county_id')->where('county_name','Mandera')->get();
+            $academics =Academic::all();
+            
+            $subdutystation =SubCounty::join('counties','counties.id','sub_counties.county_id')->where('county_name','Mandera')->get();
             // $data = DB::table('ethnicities')->get();
             // $homecounty =HomeCounty::all();
            
 
-    return view('admin.auditform', compact('terms','education','subclan' ,'subdutystation','department','jobgroup','ethnicities','clans','county','section','subcounties'));
+    return view('admin.auditform', compact('terms','academics','subclan' ,'subdutystation','department','jobgroup','ethnicities','clans','county','section','subcounties'));
     
         // return view('admin.auditform')->withName ([$data,$subclan}) ;  
     }
-    public function GetSubCatAgainstMainCatEdit($id){
-        echo json_encode(DB::table('clans')->where('ethnicity_id', $id)->get());
+    // public function GetSubCatAgainstMainCatEdit($id){
+    //     echo json_encode(DB::table('clans')->where('ethnicity_id', $id)->get());
 
-    }
+    // }
 
     
 
     public function records()
     {           
             
-             $audit = Audit::orderBy('created_at','ASC')->get();
+             $audit = Audit::orderBy('id','ASC')->get();
             return view('admin.auditrecords')->with('audit',$audit);
       
     }
@@ -106,7 +109,7 @@ class AuditController extends Controller
             'employee_name'=> 'required',
             'gender'=> 'required',
             'date_of_birth'=> 'required',
-            'employee_personal_no'=> 'nullable',
+            'employee_personal_no'=> 'required | unique:audits',
             'id_no'=> 'required | unique:audits',
             'disability'=> 'required',
             'nature_of_disability'=> 'nullable',
@@ -125,7 +128,7 @@ class AuditController extends Controller
             'sub_county'=> 'required',
             'ethnicity'=> 'required',
             'clan'=> 'nullable',
-            'sub_clan'=> 'nullable',
+            'sub_clan'=> 'required',
             'mobile_number'=> 'required|unique:audits',
             'contact_address'=> 'nullable',
             'email_address'=> 'required|unique:audits',
@@ -208,10 +211,10 @@ class AuditController extends Controller
      * @param  \App\Models\c  $c
      * @return \Illuminate\Http\Response
      */
-    public function show(c $c)
-    {
-        return view('admin.audit-edit');
-    }
+    // public function show(c $c)
+    // {
+    //     return view('admin.audit-edit');
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -222,7 +225,24 @@ class AuditController extends Controller
     public function editform($id)
     {
         
-        $audit= Audit::findOrFail($id);
+             $audit= Audit::findOrFail($id);
+            $terms = Terms::all();
+            $clans = Clan::all();
+            $subclan =Sub_clan::all();
+            $department =Department::all();
+            $jobgroup =JobGroup::all();
+            $ethnicities =Ethnicity::all();
+            $county =County::all();
+            $section =Section::all();
+            
+            $subcounties =SubCounty::all();
+            $academics =Academic::all();
+            $subdutystation =SubCounty::join('counties','counties.id','sub_counties.county_id')->where('county_name','Mandera')->get();
+      
+           
+
+    return view('admin.auditedit', compact('terms','academics','subclan' ,'subdutystation','department','jobgroup','ethnicities','clans','county','section','subcounties'));
+
         return view('admin.auditedit')->with('audit',$audit);
     }
 
@@ -342,10 +362,10 @@ class AuditController extends Controller
        $audit->approved_by =$request->approved_by;
        $audit->date_captured =$request->date_captured;
        $audit->captured_by =$request->captured_by;
-       $audit->update();
+       $audit->save();
       // return redirect('/admin.auditrecords')->with('status','Audit record added successfully');
       //
-       //return redirect()->back()->with('status',"Audit record added successfully");
+       return redirect()->back()->with('status',"Audit record added successfully");
        return redirect()->route('admin.auditrecords')->with('status',"Audit record updated successfully");
     } 
 

@@ -19,7 +19,7 @@ class CreateAuditsTable extends Migration
             $table->string('employee_name');
             $table->string('gender');
             $table->date('date_of_birth');
-            $table->string('employee_personal_no')->nullable();
+            $table->string('employee_personal_no')->unique();
             $table->string('id_no')->unique();
             $table->string('disability');
             $table->string('nature_of_disability')->nullable();

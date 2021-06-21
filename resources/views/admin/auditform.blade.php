@@ -48,9 +48,11 @@
                                 <div class="col-md-4">
                                 <label>Employee Name</label>
                                     <div class="form-group">
-                                        <input type="text" value="{{ old('employee_name') }}" autofocus class="form-control" name="employee_name" placeholder="Employee Name">
+                                    <input style="text-transform: uppercase;" class="form-control"value="{{ old('employee_name') }}" type="text" name="employee_name">
+                                        <!-- <input type="text" value="{{ old('employee_name') }}" autofocus class="form-control" name="employee_name" placeholder="Employee Name"> -->
                                     </div>
                                 </div>
+                               
                                 <div class="form-group col-md-4">
                                     <label>Gender  </label>
                                     <p>Please select  gender:</p>
@@ -88,12 +90,16 @@
                                 <div class="col-md-4">
                                 <label>First Designation </label>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" value="{{ old('first_designation') }}" name="first_designation"placeholder="First Designation ">
+                                        <!-- <input type="text" class="form-control" value="{{ old('first_designation') }}" name="first_designation"placeholder="First Designation "> -->
+                                        <input style="text-transform: uppercase;" placeholder="FIRST Designation " class="form-control"value="{{ old('first_designation') }}" type="text" name="first_designation">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                 <label>Current Designation </label>
                                     <div class="form-group">
+                                      
+                                       
+                                    <input style="text-transform: uppercase;" class="form-control"value="{{ old('current_designation') }}" type="text" name="current_designation" placeholder="Current Designation ">
                                         <input type="text" class="form-control" value="{{ old('current_designation') }}" name="current_designation"placeholder="Current Designation ">
                                     </div>
                                 </div>
@@ -111,7 +117,8 @@
                                 <div class="col-md-4">
                                 <label>Duty Station  </label>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" value="{{ old('duty_station') }}"  name="duty_station" placeholder="Duty Station">
+                                    <!-- <input type="text" class="form-control" value="{{ old('duty_station') }}" name="duty_station"placeholder="duty station  "> -->
+                                    <input style="text-transform: uppercase;" placeholder="duty station " class="form-control"value="{{ old('duty_station') }}" type="text" name="duty_station">
                                     </div>
                                 </div>
 
@@ -326,9 +333,9 @@
                                 <label>Academic Qualification</label>
                                     <div class="form-group">
                                     
-                                    <select name="academic_qualification"     value="{{ old('academic_qualification') }}" class="form-control" >
+                                    <!-- <select name="academic_qualification"     value="{{ old('academic_qualification') }}" class="form-control" > -->
                                         
-                                    <option value=""></option>
+                                    <!-- <option value=""></option>
                                         <option value="MASTERS">MASTERS</option>
                                         <option value="BACHELORS">BACHELORS</option>
                                         <option value="DIPLOMA">DIPLOMA</option>
@@ -336,8 +343,14 @@
                                         <option value="KCSE">KCSE</option>
                                         <option value="KCPE">KCPE</option>
                                         <option value="MADRASSA">MADRASSA</option>
-                                        <option value="NOT SCHOOLED">NOT SCHOOLED</option>
+                                        <option value="NOT SCHOOLED">NOT SCHOOLED</option> -->
+                                        <select name="academic_qualification"   value="{{ old('academic_qualification') }}"   class="form-control">
+                                        <option value=""></option>
+                                          <?php foreach($academics as $row):?>
+                                                <option><?=$row->name?></option>
+                                          <?php endforeach;?>
                                         
+                                    </select> 
 
 
                                         
@@ -349,13 +362,15 @@
                                 <div class="col-md-4">
                                   <label>Area of Specialization</label>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" value="{{ old('area_of_specialization') }}" name="area_of_specialization" placeholder="Area of Specialization">
+                                    <input style="text-transform: uppercase;" placeholder="area of specialization station " class="form-control"value="{{ old('area_of_specialization') }}" type="text" name="area_of_specialization">
+                                        <!-- <input type="text" class="form-control" value="{{ old('area_of_specialization') }}" name="area_of_specialization" placeholder="Area of Specialization"> -->
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                 <label>Professional  Qualification</label>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" value="{{ old('professional_qualification') }}" name="professional_qualification" placeholder="Professional  Qualification">
+                                    <input style="text-transform: uppercase;" placeholder="professional qualification " class="form-control"value="{{ old('professional_qualification') }}" type="text" name="professional_qualification">
+                                        <!-- <input type="text" class="form-control" value="{{ old('professional_qualification') }}" name="professional_qualification" placeholder="Professional  Qualification"> -->
                                     </div>
                                 </div>
                                 <div class="col-md-4">

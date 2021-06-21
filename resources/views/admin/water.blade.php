@@ -12,7 +12,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h4>WATER, ENVIRONMENT,SANITATION EMPLOYEES AUDITED</h4>
-                    <div class="col" ><a href="#"><button class="btn btn-success float-right " >WATER,ENVIRONMENT,SANITATION</button></a></div>
+                    <div class="col" ><a href="#"><button class="btn btn-primary float-right " >WATER,ENVIRONMENT,SANITATION</button></a></div>
                   </div>
                  
 

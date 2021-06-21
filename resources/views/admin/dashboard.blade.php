@@ -87,7 +87,7 @@
                       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
                         <div class="card-content">
                           <h5 class="font-15">ETHNICITY</h5>
-                          <h1 class="mb-3 font-18 align="center" ><b> LOCALS -{{$count = DB::table('audits')->where('home_county','Mandera')->count()}}
+                          <h1 class="mb-3 font-18 align="center" ><b> LOCALS -{{$count = DB::table('audits')->where('ethnicity','SOMALI')->count()}}
                           <BR></b></h1>
                           
                          
@@ -214,12 +214,12 @@
 
               
         </div>
-<script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
-<script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<!-- <script src="{{asset('assets/bundles/libscripts.bundle.js')}}"></script> <!-- Lib Scripts Plugin Js
+<script src="{{asset('assets/bundles/vendorscripts.bundle.js')}}"></script> <!-- Lib Scripts Plugin Js --
 
-<script src="assets/bundles/morrisscripts.bundle.js"></script> <!-- Morris Plugin Js --> 
+<script src="{{asset('assets/bundles/morrisscripts.bundle.js')}}"></script> <!-- Morris Plugin Js --
 
-<script src="assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
-<script src="assets/js/pages/charts/morris.js"></script>
-         
+<script src="{{asset('assets/bundles/mainscripts.bundle.js')}}"></script><!-- Custom Js --
+<script src="{{asset('assets/js/pages/charts/morris.js')}}"></script> -->
+        
 @endsection

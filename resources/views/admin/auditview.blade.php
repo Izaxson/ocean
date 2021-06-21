@@ -8,11 +8,11 @@
 
              <div class="section-body">
              <div class="row">
-                <div class="col-6 col-md-12 col-lg-12">
+                <div class="col-12 col-md-12 col-lg-12">
                   <div class="card">
                 
                     <button class="btn btn-success " ><h4>STAFF AUDIT TOOL,OCTOBER 2020 </h4></button>
-                    <button class="btn btn-success " ><h4>VIEW AUDIT FORM DETAILS </h4></button>
+                    <button class="btn btn-success " ><h4>VIEW  AUDIT FORM DETAILS </h4></button>
                  <img height="184" width="100%" alt="image" src="{{ asset('assets/img/mcpsblogo.png')}}"> 
                   <div class="card-header">
 
@@ -34,7 +34,7 @@
                         @endif        
                         
                    <div class="col" >
-                   <hr> <button class="btn btn-success ">AUDIT FORM</button><hr>
+                   <hr> <button class="btn btn-warning ">AUDIT FORM FOR: {{ $audit->employee_name}} OF ID NO.{{ $audit->id_no}}</button><hr>
                           <div class="form-group" class="col-24 col-md-12 col-lg-12">
                               <button class="btn btn-success " >SECTION A.</button>
                               <button class="btn btn-success " >PERSONAL DETAILS</button>

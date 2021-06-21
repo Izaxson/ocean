@@ -1,3 +1,4 @@
+
 @extends('layouts.master')
 @section('title','Audit Records');
 @section('content')
@@ -11,8 +12,8 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h4>HEALTH  DEPARTMENT EMPLOYEES AUDITED</h4>
-                    <div class="col" ><a href="#"><button class="btn btn-primary float-right " >HEALTH DEPARTMENT</button></a></div>
+                    <h4>PUBLIC SERVICE BOARD </h4>
+                    <div class="col" ><a href="#"><button class="btn btn-primary float-right " >PUBLIC SERVICE BOARD</button></a></div>
                   </div>
                  
 
